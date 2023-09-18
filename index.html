@@ -1,16 +1,115 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ex16 Js</title>
+
 </head>
+
 <body>
 
-    <script src="/Assets/Ex16.js">
+    <header>
 
+        <h1> Vos coordonnées :</h1>
 
-    </script>
+    </header>
+
+      <section>
+
+      <form name="Ex16" action="http://bienvu.net/script.php" method="post" id="monFormulaire">
+
+        <span for="uname">* Ces zones sont obligatoires </span>
     
+        <br>
+        
+        <fieldset>
+    
+            <label for="societe">Société* :</label><input type="text" name="societe" id="societe" required>
+            
+            <br>
+    
+            <label for="contact">Personne à contacter* :</label><input type="text" name="contact" id="contact" required>
+    
+            <br>
+    
+            <label for="aentreprise">Adresse de l'entreprise* :</label><input type="text" name="aentreprise" id="aentreprise" required>
+    
+            <br>
+    
+            <label for="codePostal">Code postal* :</label><input type="text" name="codePostal" id="codePostal" pattern="[0-9]{5}" required>
+    
+            <br>
+    
+            <label for="ville">Ville : *</label><input type="text" name="ville" id="ville" required>
+    
+            <br>
+    
+            <label for="email">Email* :</label><input type="email" name="email" id="email" required>
+
+            <br>
+    
+            <label for="telephone">Téléphone :</label><input type="number" name="telephone" id="telephone">
+
+            <br>
+
+            <label for="techniques">Sélectionnez l'environnement technique du projet :</label>
+    
+            <select id="techniques" name="techniques"> 
+        
+                <option value="Choisissez" disabled selected>Choisissez</option>
+        
+                <option value="Access">Access</option>
+        
+                <option value="Java">Java</option>
+        
+                <option value="Delphi">Delphi</option>
+
+                <option value="Windev">Windev</option>
+
+                <option value="VisualBasic">Visual Basic</option>
+
+                <option value="PowerBuilder">Power Builder</option>
+
+                <option value="Internet">Internet</option>
+
+                <option value="Intranet">Intranet</option>
+
+                <option value="WindowsNT">Windows NT</option>
+
+                <option value="Unix">Unix</option>
+
+                <option value="SQLServer">SQLServer</option>
+
+                <option value="Oracle">Oracle</option>
+    
+                <option value="Autres...">Autres</option>
+    
+            </select>
+    
+            <textarea name="environnementtechnique" style="height: 40px;"> </textarea>
+    
+           </fieldset>
+    
+           <button type="submit" id="bouton_envoie">Envoyer</button>
+    
+           <button type="reset">Effacer</button>
+    
+        </form>
+
+      </section>
+
+      <script src="/Assets/Ex16.js">
+
+
+
+      </script>
+
 </body>
+
 </html>
